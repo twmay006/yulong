@@ -506,7 +506,7 @@ li.sonp-navigation-item:hover {
 	font: 14px/2 "Microsoft YaHei", Arial, Tahoma
 }
 
-.second .hiSlider-pages {
+/*.second .hiSlider-pages {
 	bottom: 100px;
 	right: 60%;
 	text-align: left
@@ -522,7 +522,7 @@ li.sonp-navigation-item:hover {
 	font-size: 0;
 	border-radius: 30%;
 	background: #ddd
-}
+}*/
 
 .hiSlider-pages a.active {
 	background: #9F7443;
