@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>购物车</title>
+  <link rel="stylesheet" href="shopping.css">
+ </head>
+ <body>
+		<div id="header" class="header">
+			<div class="wrapper">
+				<div class="topnav">
+					<div class="logo">
+						<a href="/pc?shopId=5&amp;pf=vip_m-jifen-pc">
+							<img id="logoImage" src="images/275.png" alt="御龙在天商城">
+						</a>
+
+						<h1 class="hide">御龙在天商城</h1>
+					</div>
+					<div class="navbar">
+						<ul class="cf">
+							<li id="shopCategory" class="nav-item">
+								<a href="#" class="nav-item-a"><i class="class"></i><span>商品分类</span></a>
+							</li>
+
+							<li id="activityMenu" class="nav-item">
+								<a href="/pc/activity?shopId=5&amp;pf=vip_m-jifen-pc" target="_blank" class="nav-item-a"><i class="star"></i><span>活动精选</span></a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="login">
+						<div id="personal" class="scoring">
+						  <a href="/pc/personal/?shopId=5&amp;pf=vip_m-jifen-pc" class="scoring-user">
+							<i class="mine"></i>
+							<em>熊三</em>
+						  </a>
+						</div>
+						<a href="/pc/cart?shopId=5&amp;pf=vip_m-jifen-pc" class="shopping-cart">
+						  <div class="cart" id="shopCart" data-center="350,-554">
+							<span id="cartNum" class="badge">1</span>
+						  </div>
+						</a>
+					  </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content">
+			<ol class="breadcrumb">
+				<li>
+					<a href="/pc?shopId=5&amp;pf=vip_m-jifen-pc">商品分类</a><span class="diagonal">/</span></li>
+				<li>
+					<a href="javascript:void(0);" class="active">【八折】御龙在天正品授权 真龙金戒</a>
+				</li>
+			</ol>
+			<div class="product-intro cf">
+				<div class="product-preview">
+					<div class="product-img">
+						<img id="productMainPic" src="images/640.jpg">
+					</div>
+					<div class="thumbnails">
+						<ul class="thumbnail-list cf">
+
+							<li class="thumbnail-item active">
+								<a href="javascript:void(0);" onmouseover="show(this)"><img src="images/150.jpg" alt="【八折】御龙在天正品授权 真龙金戒"></a>
+							</li>
+
+							<li class="thumbnail-item">
+								<a href="javascript:void(0);" onmouseover="show(this)"><img src="images/151.jpg" alt="【八折】御龙在天正品授权 真龙金戒"></a>
+							</li>
+
+							<li class="thumbnail-item">
+								<a href="javascript:void(0);" onmouseover="show(this)"><img src="images/152.jpg" alt="【八折】御龙在天正品授权 真龙金戒"></a>
+							</li>
+
+							<li class="thumbnail-item">
+								<a href="javascript:void(0);" onmouseover="show(this)"><img src="images/153.jpg" alt="【八折】御龙在天正品授权 真龙金戒"></a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="product-info">
+					<div class="product-name">
+						<h2 class="title">【八折】御龙在天正品授权 真龙金戒</h2>
+						<p class="txt">奢华精美的真龙戒指，纯金贵金属，送人，收藏首选，极具收藏价值。</p>
+					</div>
+					<div class="product-price">
+						<p>
+						<span class="current-price">￥
+							<span id="salePrice" class="num">5888.00</span>
+						</span>
+						<del class="old-price">原价￥
+							<span id="price" class="num">7360.00</span>							
+						</del>
+						<b>双十一特惠！</b>
+						</p>
+						
+					</div>
+					<form id="productForm" action="/pc/buy-now?md=&amp;pf=vip_m-jifen-pc" method="post">
+						<div class="product-custom">
+							<h3>颜色</h3>
+							<ul class="custom sizes cf">
+
+								<li class="custom-item selected" data-index="0" data-value="892:964">金色</li>
+
+							</ul>
+						</div>
+
+						<div class="product-quantity">
+							<h3>数量</h3>
+							<div id="quantityInput" class="quantity-input">
+								<button type="button" class="reduce" onclick="compute(this)">
+								  <i class="icon-reduce"></i>
+								</button>
+								<input type="text" name="items[][quantity]" class="quantity-input-tx" value="1" maxlength="4">
+								<button type="button" class="add" onclick="compute(this)">
+								  <i class="icon-add"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="product-buy">
+
+							<a href="javascript:void(0);" onclick="fly(this)" id="addToCartButton" class="js_buy-button btn btn-big btn-green cart">加入购物车</a>
+							<i class="fly-item" id="fly-item" data-center="0,0"></i>
+							<a href="javascript:void(0);" id="buyNowButton" class="js_buy-button btn btn-big btn-red buy">立即购买</a>
+							
+						</div>
+
+					</form>
+				</div>
+			</div>
+			<div id="productDetail" class="product-detail">
+				<div class="detail-subnav">
+					<ul class="cf">
+						<li class="subnav-item active">
+							<a href="javascript:void(0);">商品详情</a>
+							<i class="horizontal-line"></i>
+						</li>
+					</ul>
+				</div>
+				<div class="detail-content">
+					<div class="content-item contact_item active">
+						<img src="images/640.jpg" border="0" width="640" height="640" alt=""><img src="images/641.jpg" border="0" width="640" height="640" alt=""><img src="images/642.jpg" border="0" width="640" height="640" alt=""><img src="images/643.jpg" border="0" width="640" height="640" alt=""><img src="images/644.jpg" border="0" width="640" height="640" alt=""><img src="images/645.jpg" border="0" width="640" height="640" alt=""><img src="images/646.jpg" border="0" width="640" height="640" alt=""><img src="images/647.jpg" border="0" width="640" height="640" alt=""><img src="images/648.jpg" border="0" width="640" height="640" alt=""><img src="images/649.jpg" border="0" width="640" height="640" alt=""><img src="images/6410.jpg" border="0" width="640" height="640" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="fixed-tools">
+			<div class="tools-group">
+				<!-- 移动端入口 -->
+				<div class="tool show-mobile-qrcode">
+					<a href="#" class="" title="手机商城">返<br>回<br>顶<br>部</a>					
+				</div>
+				<!-- 移动端入口 -->
+			</div>
+			<div class="tools-group">
+				<a href="#" class="btn-back-to-top" style="display: block;"></a>
+			</div>
+		</div>
+		<script type="text/javascript">
+		var li=document.getElementsByClassName("thumbnail-item");
+		var img=document.getElementById("productMainPic");
+		var index=0;
+			for(var i=0;i<li.length;i++){
+				li[i].index=i;
+				li[i].onmouseover=function(){
+					show(this.index);
+				}
+			}
+			function show(a){
+				for (var i=0;i<li.length;i++ )
+				{
+					li[i].className="thumbnail-item";
+				}
+				li[a].className="thumbnail-item active";
+				img.src="images/64"+a+".jpg";
+			}
+			function compute(c){
+				var quality=document.querySelector(".quantity-input-tx").getAttribute("value");
+				if (c.className=="reduce")
+				{
+					quality=quality>1?--quality:1;
+				}
+				else{
+					quality++;
+				}
+				document.querySelector(".quantity-input-tx").setAttribute("value",quality);
+			}
+		/*	function fly(a){
+				var i=a.nextSibling.nextSibling;
+				i.className+=" fly";
+			}*/
+		</script>
+	</body>
+</html>

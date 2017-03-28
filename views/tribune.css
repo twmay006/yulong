@@ -1,0 +1,570 @@
+*{
+	margin: 0;
+    padding: 0;
+}
+body {
+    padding-top: 0px;
+    min-width: 1084px;
+    overflow-x: auto;
+    background: #241d17;
+    color: #323232;
+    font-size: 14px;
+    font-family: "微软雅黑";
+}
+.msg{
+    text-decoration: none;
+    color: red;
+    margin-left: 100px;
+    font-size: 12px;
+    opacity: 0;
+}
+.regmsg{
+    margin-left: 120px;
+    color: red;
+    margin-top: 15px;
+    opacity: 0;
+}
+.wrap {
+    background: #faf5f1 url("images/big_bg.jpg") center top no-repeat;
+     width: 100%;
+    min-width: 1000px;
+    z-index: 100;
+    position: relative;
+}
+.hid {
+    display: none;
+    font-size: 0;
+    line-height: 0;
+}
+.header {
+    width: 1100px;
+    height: 156px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+a, a:hover, a:visited {
+    text-decoration: none;
+    color: #000;
+}
+a {
+    color: #323232;
+}
+.header img {
+    float: left;
+}
+.login{
+    position: fixed;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    display: none;
+}
+.cur ul li{
+	height: 60px;
+}
+.vali{
+    display: inline-block;
+    height: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 125px;
+    width: 100px;
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    background: url(images/nav_hover.jpg) no-repeat;
+    border: 1px solid #666;
+}
+.login .con{
+    width: 350px;
+    height: 450px;
+    background-color: rgba(255,255,255,0.7);
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+    border-radius: 10px;
+}
+.con .ttabs li{
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.con .ttabs li.cur{
+    background: #CC6600;
+    color: #fff;
+}
+.tcontent{
+    float: left;
+    height: 460px;
+    width: 350px;
+    position: relative;
+}
+a.forget{
+    color: #00f;
+    margin-left: 245px;
+    margin-top: 30px;
+}
+.tcontent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.con b{
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: #bbb;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+.aaa{
+    margin-left: 80px;
+    margin-top: 20px
+}
+.aaa a{
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    background: #CC6600;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 20px
+}
+.aaa a:hover{
+    background: #964800;
+}
+.tcontent div.cur{
+    display: block;
+}
+.tcontent div.cur input{
+    height: 20px;
+    width: 200px;
+    outline: 0;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 0;
+    border-bottom: 2px solid #CC6600;
+    padding-left: 20px;
+    background-color: rgba(255,255,255,0);
+}
+.tcontent div.cur input::-webkit-input-placeholder { /* WebKit browsers */
+color: #777;
+font-size: 14px;
+} 
+.tcontent div.cur ul{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.tcontent div.cur ul li span{
+    display: inline-block;
+    width: 72px;
+    color: #000;
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.logo1 {
+    margin: 20px 18px 0 0;
+}
+img {
+    display: block;
+}
+.logo_tiao {
+    margin-top: 34px;
+}
+.logo2 {
+    margin: 35px 0 0 24px;
+}
+.header_funciotn {
+    float: right;
+	margin-top: 40px;
+}
+.clearfix {
+    display: block;
+}
+a.lt_login {
+    width: 102px;
+    height: 31px;
+    background:rgba(46,47,42,.5);
+    border-radius: 10px;
+    float: right;
+    line-height: 31px;
+    color: #F8CC6E;
+    margin-right: 0;
+    margin-top: 7px;
+	transition:background 1s linear 0s;
+}
+a.lt_login:hover{
+	background:rgba(46,47,42,1);
+}
+a.lt_login b {
+    background: url("images/login_icon.png") center center no-repeat;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    margin: -2px 11px 0 13px;
+}
+.logined {
+    color: #ffe583;
+    font-size: 14px;
+    text-align: right;
+}
+.logined a {
+    color: #ffe583;
+}
+.clearfix:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.main {
+    width: 1100px;
+    border-bottom: 1px solid #EFEDEA;
+    background: #FFFFFF;
+    margin: 0 auto 52px;
+}
+.nav {
+    width: 100%;
+    height: 46px;
+    background: url("images/nav_top_bg.jpg") center center repeat-x;
+	position: relative;
+    z-index: 100;
+}
+.nav li {
+    float: left;
+}
+.nav a:hover{
+	background: url("images/nav_hover.jpg");
+}
+.nav a {
+    width: 110.5px;
+    height: 33px;
+    background: none;
+    float: left;
+    cursor: pointer;
+    padding-top: 13px;
+    padding-left: 32.5px;
+}
+ol, ul {
+    list-style: none;
+}
+.nav li {
+    float: left;
+}
+.lt_header {
+    border-bottom: 1px solid #eeeae7;
+}
+.lt_header_left {
+    width: 700px;
+    height: 314px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    margin-right: 30px;
+}
+.play{
+	position: relative;
+	height: 314px;
+}
+.play a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.play a.cur{
+	display: inline-block;
+}
+.ll{
+	position: absolute;
+	bottom: 0;
+	width: 700px;
+	background: rgba(0,0,0,0.5);
+	height: 30px;
+}
+.ll a{
+	display: inline-block;
+	width: 171px;
+	box-sizing: border-box;
+	border-right: 1px solid #666;
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer;
+	text-align: center;
+	line-height: 30px;
+}
+.ll a.cur{
+	color: #C08A0F;
+	background: rgba(0,0,0,0.7);
+}
+.lt_select_bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 43px;
+    background: rgba(0,0,0,.5);
+}
+.lt_select_bottom li:hover, .lt_select_bottom li.on {
+    color: #f7cb6f;
+}
+.lt_select_bottom li {
+    width: 25%;
+    text-align: center;
+    line-height: 43px;
+    float: left;
+    color: #fff;
+    cursor: pointer;
+    background: url("images/tiao_bg3.png") right center no-repeat;
+}
+.lt_header_right {
+    float: left;
+}
+.right_title {
+    width: 204px;
+    height: 21px;
+    display: block;
+    background: url(images/top_posts.png) no-repeat;
+    margin-top: 29px;
+    margin-bottom: 18px;
+}
+.lt_header_right ul li {
+    height: 37px;
+    background: url(images/tiao_bg2.png) top center no-repeat;
+    line-height: 35px;
+    width: 330px;
+    overflow: hidden;
+}
+.lt_header_right ul li b {
+    margin-right: 12px;
+}
+.lt_header_bottom {
+    width: 100%;
+    height: 43px;
+    display: block;
+    clear: both;
+    padding-top: 11px;
+    border-top: 1px solid #e4e3e3;
+}
+.lt_serach {
+    float: left;
+    height: 30px;
+    margin-left: 32px;
+    margin-right: 9px;
+    width: 380px;
+    border: 1px solid #C18B05;
+    border-radius: 10px;
+    position: relative;
+}
+.lt_serach i {
+    width: 19px;
+    height: 19px;
+    /*background: url(images/search_btn.png) no-repeat;*/
+    cursor: pointer;
+    position: absolute;
+    left: 7px;
+    top: 6px;
+}
+.lt_search_input {
+    outline: none;
+    line-height: 30px;
+    border: none;
+    border: 0;
+    background: 0;
+    width: 240px;
+    height: 28px;
+    margin-left: 12px;
+    padding-left: 20px;
+}
+.lt_serach span {
+    color: #C18B05;
+    cursor: pointer;
+    line-height: 0px;
+    width: 60px;
+    height: 32px;
+    line-height: 30px;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+.lt_serach span b {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    /*background: url(images/search_icon1.png) center center no-repeat;*/
+}
+.lt_search_btn {
+    width: 73px;
+    height: 32px;
+    background: #9B0B0B;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    float: left;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 14px;
+}
+.lt_middle {
+    height: 60px;
+    line-height: 60px;
+    padding: 0px 30px 0 22px;
+    overflow: hidden;
+}
+.lt_middle ul li {
+    padding-left: 10px;
+    padding-right: 12px;
+    float: left;
+   /* background: url(images/tiao_bg4.png) right center no-repeat;*/
+}
+.lt_middle ul li span {
+    color: #7f7f7f;
+}
+.lt_middle_right {
+    float: right;
+    width: 316px;
+    overflow: hidden;
+    height: 60px;
+}
+.lt_middle_right span {
+    float: left;
+}
+.lt_bottom {
+    overflow: hidden;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+.lt_bottom ul li {
+    width: 503px;
+    height: 180px;
+    float: left;
+    padding: 11px 0 0 13px;
+    margin: 0 9px 10px 0;
+    background: #f7f7f7;
+}
+.lt_bottom_img {
+    width: 169px;
+    height: 169px;
+    float: left;
+    margin-right: 26px;
+}
+.lt_bottom_img a img{
+	opacity:1;	
+}
+@keyframes flash{
+	0%{opacity:1}
+	100%{opacity:0.5}
+}
+.lt_bottom_img a img:hover{
+	opacity:1;
+	animation:flash 1s linear 0s infinite alternate;
+}
+.lt_bottom_word {
+    float: left;
+    width: 280px;
+}
+.lt_bottom_word h2 a {
+    line-height: 40px;
+    font-size: 20px;
+    color: #c08a0f;
+    padding-left: 14px;
+   /* background: url(images/tiao_bottom_bg.jpg) left center no-repeat;*/
+}
+.lt_bottom_word dl {
+    height: 44px;
+    margin-bottom: 22px;
+}
+.lt_bottom_word dt {
+    margin: 16px 0;
+}
+.notice {
+    line-height: 50px;
+    height: 50px;
+    background: #685C4A;
+    color: #B29A75;
+    text-align: center;
+}
+.notice span {
+    color: #EBE9E7;
+}
+.foot {
+    width: 1423px;
+    height: 130px;
+    position: relative;
+}
+.weibu{
+    position: absolute;
+    bottom: 0;
+    height: 130px;
+    width: 1423px;
+    background-color: #000;
+}
+.listm{
+    width: 1423px;
+    padding: 0 194px;
+    height: 30px;
+    box-sizing: border-box;
+    background-color: #393A3D;
+}
+.listm li{
+    float: left;
+    width: 115px;
+    height: 30px;
+    color: #BB8045;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+}
+.tlogo{
+    width: 280px;
+    height: 60px;
+    background: url(images/timi.jpg);
+    float: left;
+}
+.tencent{
+    width: 960px;
+    height: 60px;
+    margin: 20px auto;
+}
+.tcontent{
+}
+.some li a{
+    line-height: 16px;
+    color: #C9A85C;
+    margin-right: 8px;
+}
+.some li{
+    float: left;
+    color: #C9A85C;
+}

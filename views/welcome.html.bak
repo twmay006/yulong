@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<title>欢迎页面</title>
+		<link rel="stylesheet" type="text/css" href="welcome.css">
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div id="swfcontent" class="flash-top"></div>
+			<h1 class="logo"><a href="main.shtml">御龙在天 腾讯第一国战网游</a></h1>
+			<div class="main">
+				<div class="header">
+					<!--a href="http://yl.qq.com/act/a20151118gz/index.html" class="hdde" target="_blank" onClick="pgvSendClick({hottag:'index.hd.detail'});">查看详情</a-->
+					<a href="#" class="hdde1" target="_blank">查看详情</a>
+				</div>
+				<div class="content">
+					<a href="#" target="_blank" class="ea" id="hdz1"><img src="images/1475045472593082142.jpg" alt="四周年庆活动站" width="217" height="297"></a>
+					<div class="mvd">
+						<div class="vid">
+							<video width="478" height="309" controls>
+							  <source src="west2.mp4" type="video/mp4">
+							  <source src="west2.mp4" type="video/ogg">
+							  <source src="west2.mp4" type="video/webm">
+							  <object data="west2.mp4" width="320" height="240">
+								<embed src="west2.mp4" width="320" height="240">
+							  </object> 
+							</video>
+						</div>
+					</div>
+					<div class="msbtn" id="msbtn">
+						<a onclick="load()" id="guanwang"></a>
+						<a onclick="javascript:load()"></a>
+					</div>
+					<div class="hds">
+						<div class="left-hiSlider">
+							<ul class="hiSlider hiSlider1">
+								<li class="hiSlider-item"><a href="#" class="ea"><img src="images/1468966247518066463.jpg" alt="心悦御龙阁"></a></li>
+								<li class="hiSlider-item"><a href="#" class="ea"><img src="images/1474518031491712823.jpg" alt="心悦御龙阁"></a></li>
+								<li class="hiSlider-item"><a href="#" class="ea"><img src="images/1474829929567298693.jpg" alt="心悦御龙阁"></a></li>
+							</ul>
+						</div>
+						<div class="middle-hiSlider"">
+							<ul class="hiSlider hiSlider1" >
+								<li class="hiSlider-item"><a href="#" class="ea"><img src="images/1468827018_1436653066_19374_sProdImgNo_1.jpg" alt="心悦御龙阁"></a></li>
+								<li class="hiSlider-item"><a href="#" class="ea"><img src="images/1468827313_1436653066_21400_sProdImgNo_1.jpg" alt="心悦御龙阁"></a></li>
+								<li class="hiSlider-item"><a href="#" class="ea"><img src="images/1468827369_1436653066_25867_sProdImgNo_1.jpg" alt="心悦御龙阁"></a></li>
+							</ul>
+						</div>
+						<div class="right-hiSlider"">
+							<ul class="hiSlider hiSlider1" >
+								<li class="hiSlider-item"><a href="#" class="ea"><img src="images/1436860139_1436653066_9032_sProdImgNo_1.jpg" alt="心悦御龙阁"></a></li>
+								<li class="hiSlider-item"><a href="#" class="ea"><img src="images/1436859991_1436653066_4546_sProdImgNo_1.jpg" alt="心悦御龙阁"></a></li>
+								<li class="hiSlider-item"><a href="#" class="ea"><img src="images/1448245657_1436653066_8653_sProdImgNo_1.jpg" alt="心悦御龙阁"></a></li>
+							</ul>
+						</div>
+						<!--<a href="#" class="ea" target="_blank"><img src="images/1468966247518066463.jpg" alt="心悦御龙阁" width="315" height="180"></a>
+						<a href="#" class="ea" target="_blank"><img src="images/1474518031491712823.jpg" alt="四重礼" width="315" height="180"></a>
+						<a href="#" class="ea" target="_blank"><img src="images/1474829929567298693.jpg" alt="test3" width="315" height="180"></a>-->
+					</div>
+				</div>
+				<div id="footer_ied">
+					<div class="wrap_ied">
+						<p>
+							<a href="#" target="_blank">腾讯互动娱乐</a> |
+							<a href="#" target="_blank">服务条款</a> |
+							<a href="#" target="_blank">广告服务</a> |
+							<a href="#" target="_blank">腾讯游戏招聘</a> |
+							<a href="#" target="_blank">腾讯游戏客服</a> |
+							<a href="#" target="_blank">游戏地图</a> |
+							<a href="#" target="_blank">游戏活动</a> |
+							<a href="#" target="_blank">商务合作</a> |
+							<a href="#" target="_blank">网站导航</a>
+						</p>
+						<p class="e">COPYRIGHT © 1998 – 2016 TENCENT. ALL RIGHTS RESERVED.</p>
+						<p>
+							<a href="http://www.tencent.com/law/mo_law.shtml?/law/copyright.htm" target="_blank">腾讯公司 版权所有</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="gameOver"><!-- 半透明遮罩 -->
+			<div>
+				<div class="progress-out" id="div2">
+					 <div class="percent-show"><span>0</span>%</div>
+					<div class="progress-in"></div>
+				</div>
+			</div>
+		</div>
+	
+	<script src="js/jquery.1.9.1.js"></script>
+		<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.myProgress.js"></script>
+	<script src="js/jquery.hiSlider.js"></script>
+		<script>
+			function load(){
+				setTimeout(function(){window.location.href="../index.html"},5500);
+				document.getElementById("gameOver").style.display="block";
+			}
+			$(".hiSlider").hiSlider({intervalTime:3000});
+			/*$(function () {
+			  $("#div2").myProgress({speed: 5000, percent: 100});
+			})*/
+			$("#guanwang").click(function(){
+				$("#div2").myProgress({speed: 5000, percent: 100});
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,239 @@
+/* css reset */
+body,dl,dt,dd,ul,ol,h1,h2,h3,h4,h5,h6,pre,code,form,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0;margin:0;}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+input,textarea,select{*font-size:100%}
+a,a:hover,a:visited {text-decoration:none;color:#000;}
+
+.hid {display:none;font-size:0;line-height:0;}
+.clear {clear:both;}
+/* 布局元素 */
+body {font:normal 12px/1.6em "microsoft yahei",simsun,Tahoma,sans-serif;color:#000;padding-top:42px;}
+.wrap {width:100%;min-width:1000px;_width:1000px;}
+.header {position:relative;width:100%;z-index:10;}
+.center {position:relative;width:1000px;height:100%;margin:0 auto;overflow:hidden;}
+.nav_center{position:relative;width:1000px;height:100%;margin:0 auto;}
+.headexr{background-color: #e1e1e1}
+.fl,.f-left {float:left;display:inline;}
+.fr,.f-right {float:right;display:inline;}
+
+/* -导航- */
+.nav{position:relative;width:100%;height:85px;background:url(http://ossweb-img.qq.com/images/ylzt/web201512/web15_nav.jpg) 50% 0;z-index:100}
+.game-info{position:absolute;left:50%;top:0;z-index:99;margin-left:-81px}
+.nav-logo{display:block;width:100%;height:100%}
+.nav-list{height:100%;height:60px;padding-top:25px}
+.nav-list li{float:left;margin-right:56px;height:100%;text-align:center;font-size:14px}
+.nav-list li.li04{margin-right:205px}
+.nav-list li.mar_no{margin-right:0}
+.nav-list a{color:#f8cc6e}
+.nav-list a:hover{color:#F3A90A}
+.nav-list span{display:block;color:#705736}
+
+/*微信公众号&部落*/
+.wechat,.buluo{height:55px;color:#a1a1a1;position:relative;margin-top:16px}
+.wechat .highline{color:#73c33d}
+.wechat-ac{display:block;width:52px;padding:0 14px;height:52px;position:relative;cursor:pointer;}
+.wechat-ac-icon,.buluo-ac-icon{background:url(http://ossweb-img.qq.com/images/ylzt/web201512/spr.png) no-repeat -160px -60px;width:52px;height:52px;display:block}
+.buluo-ac-icon{background-position:-160px 0}
+.wechat-ac-data{line-height:15px;font-size:12px;padding:0 15px 0 10px}
+.wechat-ac-data h6{font-weight:normal;height:15px;max-width:110px;overflow:hidden}
+.wechat:hover .wechat-hover,.buluo:hover .wechat-hover{display:block}
+.wechat-hover{position:absolute;width:380px;background:#1E1E1E;top:66px;right:0;padding:35px;display:none}
+.wechat-hover .media-body{padding-top:25px;padding-left:161px}
+.wechat-hover .pop-title{font-size:16px;_font-size:15px;;padding-bottom:10px}
+.hd_news a:hover{color:#ff0}
+
+/*foot-info*/
+.copyright{padding-top:18px;height:54px;color:#9a9a9a}
+.cptxt{float:right;padding-right:23px;padding-top:10px;color:#4A4A4A;font-size:12px}
+.foot-cpright{overflow:hidden;min-width:880px;padding:20px 60px;zoom:1;background:#000}
+.foot-sprt{margin:0 2px;_margin:0 0}
+.foot-logos-game{display: inline-block;width:280px;height:85px;text-indent:-999em;overflow:hidden;background: url(http://ossweb-img.qq.com/images/ylzt/web201512/timi.jpg) #000 no-repeat;
+    background-position: 0px 20px;}
+.foot-links,.foot-links a {color:#4A4A4A; font-size: 12px;}
+.foot-info{padding:50px 0;letter-spacing: -4px;word-spacing: -4px;font-size:0;}
+.foot-info li{display:inline-block;*display:inline;zoom:1;vertical-align:top;letter-spacing: normal;word-spacing: normal;font-size:14px}
+.foot-info .gzweixin{width:255px;padding-right:60px}
+.foot-info .tips{width:325px;padding-right:60px}
+.foot-info .coop{width:260px;}
+.foot-info .coop-list li{display:block;}
+.foot-links .ww_ico{background:url(http://ossweb-img.qq.com/images/ylzt/web201512/youxidzbq.png) no-repeat;padding-left:20px}
+
+/*kv*/
+img{display: block}
+.context img{display:inline;}
+.header-kv{
+    box-shadow: 0 -1px 1px #000;
+}
+.kv-img{background-image: url("http://ossweb-img.qq.com/images/ylzt/web201512/kv20150517.jpg");height:740px}
+.kv-btn{display: block;position: absolute;background-image: url("http://ossweb-img.qq.com/images/ylzt/web201512/kv-btn.png");width: 275px;
+    height: 81px;
+    left: 30%;
+    bottom: 4%;
+    overflow: hidden;
+		text-indent:-999em;
+}
+
+
+.kv-btn:before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100px;
+    height: 90%;
+    left: -10px;
+    top: 3px;
+    overflow: hidden;
+    background: -moz-linear-gradient(left, rgba(255,255,255,0)0, rgba(255,255,255,.2)50%, rgba(255,255,255,0)100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(50%, rgba(255,255,255,.2)), color-stop(100%, rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0)0, rgba(255,255,255,.3)50%, rgba(255,255,255,0)100%);
+    background: -o-linear-gradient(left, rgba(255,255,255,0)0, rgba(255,255,255,.2)50%, rgba(255,255,255,0)100%);
+    -webkit-transform: skewX(-25deg);
+    -moz-transform: skewX(-25deg);
+    -webkit-animation: ani 1.2s infinite;
+    -o-animation: ani 1.2s infinite;
+    animation: ani 1.2s linear infinite;
+}
+@keyframes ani {
+    0%{
+        left: -20px;
+    }
+    100%{
+        left:320px ;
+    }
+}
+@-webkit-keyframes ani {
+    0%{
+        left: -20px;
+    }
+    100%{
+         left:320px ;
+     }
+}
+
+@-ms-keyframes ani {
+    0%{
+        left: -20px;
+    }
+    100%{
+        left:320px ;
+    }
+}
+
+@-moz-keyframes ani {
+    0%{
+        left: -20px;
+    }
+    100%{
+        left:320px ;
+    }
+}
+@-o-keyframes ani {
+    0%{
+        left: -20px;
+    }
+    100%{
+        left:320px ;
+    }
+}
+
+
+/*游戏特色*/
+.yxts .yxts-tit {
+    position: relative;
+    font-size: 48px;
+    color: #ffe9a7;
+    line-height: 100px;
+}
+.yxts span{
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 25px;
+    text-align: center;
+    left: 210px;
+    line-height: 50px;
+    border: 2px solid #ffe9a7;
+    -webkit-border-radius: 50%;
+    -moz-border-radius:  50%;
+    border-radius:  50%;
+    -webkit-border-radius: 27px;
+    -moz-border-radius: 27px;
+    border-radius: 27px;
+}
+.yxts .yxts-mit{width: 832px;height: 67px;background-repeat:no-repeat}
+.yxts .mit-1{background-image: url("http://ossweb-img.qq.com/images/ylzt/web201512/1.png");}
+.yxts .mit-2{background-image: url("http://ossweb-img.qq.com/images/ylzt/web201512/02.png");}
+.yxts .mit-3{background-image: url("http://ossweb-img.qq.com/images/ylzt/web201512/03.png");}
+.yxts .mit-4{background-image: url("http://ossweb-img.qq.com/images/ylzt/web201512/4.png");}
+.yxts .yxts-desc{font-size: 25px;color: #fff}
+.yxts .yxts-body{
+    font-size: 24px;
+    color: #fff;
+    width: 550px;
+    line-height: 35px;
+    padding-top: 15px;
+}
+.yxts .yxts-pic{
+    background-repeat: no-repeat;
+    width: 640px;
+    height: 360px;
+    margin-top: 25px;
+    border: 3px solid #edc767;
+
+}
+.yxts .pic-1{
+     background-image: url("http://ossweb-img.qq.com/images/ylzt/web201512/jt-01.png");
+ }
+.yxts .pic-2{
+    background-image: url("http://ossweb-img.qq.com/images/ylzt/web201512/jt-02.png");
+}
+.yxts .pic-3{
+    background-image: url("http://ossweb-img.qq.com/images/ylzt/web201512/jt-03.png");
+}
+.yxts .pic-4{
+    background-image: url("http://ossweb-img.qq.com/images/ylzt/web201512/jt-04.png");
+}
+
+/*查看更多*/
+a.more{
+    font-size: 14px;
+    float: right;
+    color: #edc767;
+		line-height:35px;
+}
+a.more:hover{
+    color: #ffe9a7;
+}
+.new_hot0{display:none;}
+.new_hot1,.new_hot2{
+
+    position: absolute;
+    top: 5px;
+
+    width: 36px;
+    height: 16px;
+    overflow: hidden;
+    background: url(http://ossweb-img.qq.com/images/ylzt/web201512/sprint.png) no-repeat 0 -163px;
+
+}
+.new_hot1{
+    background-position: -40px -163px;
+}
+
+/*翻页*/
+
+#newsList div.pagetion,.pagetion{
+    display: block;
+    width: 125px;
+    height: 100px;
+
+    margin: 0 auto;
+}/*  |xGv00|3e8b1005fce5ddbed9d81fee95afa427 */

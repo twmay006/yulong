@@ -1,0 +1,275 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+ul{
+	list-style: none;
+}
+.container{
+	width: 1423px;
+	height: 1600px;
+	position: relative;
+}
+.play s{
+	background: url(../images/sprite.jpg);
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-top: 7px;
+	cursor: pointer;
+	background-position: -175px -77px;
+}
+.bgb{
+	background: url(../images/top_i0.jpg) center top no-repeat;
+	width: 1423px;
+	height: 993px;
+	position: relative;
+}
+.bgb>a{
+	padding: 80px 45px;
+	cursor: pointer;
+	position: absolute;
+	top: 416px;
+	background: url(images/arr.png);
+	opacity: 0.4;
+}
+.bgb .pre:hover{
+	background: url(images/arr1.png);
+	background-position: 0px 0px;
+}
+.bgb .next:hover{
+	background: url(images/arr1.png);
+	background-position: -90px 0px;
+}
+.bgb .pre{
+	left: 102px;
+	background-position: 0px 0px;
+}
+.bgb .next{
+	right: 105px;
+	background-position: -90px 0px;
+}
+.bgs{
+	width: 1000px;
+	margin: auto;
+	height: 993px;
+	background: url(../images/s_i0.jpg) center top no-repeat;
+	position:relative;
+}
+.bgs>a:first-child{
+	padding: 36px 57px;
+	position: absolute;
+	top: 16px;
+	left: 25px;
+}
+.bgs ul{
+	float: right;
+	margin-top: 20px;
+	margin-right: 10px;
+	clear: right;
+	color: #666;
+}
+.bgs ul li{
+	float: left;
+}
+.headt li a{
+	border-right: 1px solid ccc;
+	padding: 3px 5px;
+	text-decoration: none;
+	color: #666;
+}
+.share li a{
+	padding: 12px;
+	margin-right: 5px;
+	display: inline-block;
+	background: url(../images/sprite.jpg) no-repeat;
+}
+.share .share1{
+	background-position: -1px -48px;
+}
+.share .share2{
+	background-position: -31px -48px;
+}
+.share .share3{
+	background-position: -60px -48px;
+}
+.share .share4{
+	background-position: -89px -48px;
+}
+.share .share5{
+	background-position: -118px -48px;
+}
+.share .share6{
+	background-position: -150px -48px;
+}
+.foot{
+	width: 1000px;
+	margin: 20px auto;
+}
+.leftf{
+	width: 565px;
+	margin-right: 20px;
+	float: left;
+}
+.leftf>div>div{
+	padding: 5px;
+	margin-bottom: 10px;
+	border-bottom: 1px dashed #bbb;
+}
+.leftf b{
+	font-size: 24px;
+	font-weight: normal;
+	color: #555;
+}
+.leftf span{
+	font-weight: bold;
+	color: #aaa;
+	font-size: 24px;
+	margin-right: 120px;	
+}
+.leftf .mintr div i{
+	font-style: normal;
+	background: #888;
+	color: #fff;
+	padding: 3px;
+}
+.leftf .mintr p{
+	color: #333;
+	line-height: 25px;
+	margin-bottom: 60px;
+}
+.star ul{
+	height: 85px;
+}
+.leftf .star ul li{
+	float: left;
+	margin-right: 14px;
+}
+.rightf{
+	width: 320px;
+	height: 393px;
+	padding: 10px 19px;
+	float: right;
+	border: 1px solid #aaa;
+	margin-top: 5px;
+}
+.rightf p{
+	color: #555;
+	font-size: 24px;
+}
+.rightf ul{
+	border-bottom: 1px solid #B6B6B6;
+	height: 35px;
+}
+.rightf ul li{
+	float: left;
+	text-align: center;
+	color: #555;
+	font-size: 12px;
+	line-height: 35px;
+	height: 35px;
+}
+.rightf .htit li{
+	background: #B6B6B6;
+	color: #fff;
+	height: 25px;
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+.vid {
+    width: 642px;
+    height: 362px;
+    margin: 0 0 0 41px;
+	position:absolute;
+	top: 369px;
+}
+.name{
+	width: 100px;
+	text-align: center;
+}
+.count{
+	width: 100px;
+	text-align: center;
+}
+.singer{
+	width: 50px;
+	
+	text-align: center;
+}
+.play{
+	width: 70px;
+	text-align: center;
+}
+.tab ul{
+	width: 1000px;
+	height: 100px;
+	margin: auto;
+}
+.tab ul li{
+	float: left;
+	margin: 15px 10px;
+	height: 60px;
+	width: 60px;
+	cursor: pointer;
+	border: 5px solid transparent;
+}
+.tab ul li.cur{
+	border: 5px solid #AD8D44;
+}
+.tab{
+	height: 100px;
+	width: 1423px;
+	position: absolute;
+	top: 893px;
+	left: 0;
+}
+.weibu{
+	position: absolute;
+	bottom: 0;
+	height: 130px;
+	width: 1423px;
+	background-color: #000;
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+.listm{
+	width: 1423px;
+	padding: 0 194px;
+	height: 30px;
+	box-sizing: border-box;
+	background-color: #393A3D;
+}
+.listm li{
+	float: left;
+	width: 115px;
+	height: 30px;
+	color: #BB8045;
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+}
+.tlogo{
+	width: 280px;
+	height: 60px;
+	background: url(images/timi.jpg);
+	float: left;
+}
+.tencent{
+	width: 960px;
+	height: 60px;
+	margin: 20px auto;
+}
+.tcontent{
+}
+.some li a{
+	line-height: 16px;
+	color: #C9A85C;
+	margin-right: 8px;
+	text-decoration: none;
+}
+.some li{
+	float: left;
+	color: #C9A85C;
+}

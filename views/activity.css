@@ -1,0 +1,349 @@
+/*******************************陈鹏安开始*****************************************/
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+	font: 14px/1.5 '\5FAE\8F6F\96C5\9ED1', Tahoma, Arial, "sans-serif";
+	-webkit-text-size-adjust: none;
+	color: #929392;
+	text-align: left;
+	min-width: 1000px;
+	background-color: #E3E4E3;
+	overflow-x: hidden;
+}
+
+a {
+	color: #929392;
+	vertical-align: baseline;
+	text-decoration: none;
+	cursor: pointer;
+	outline: none
+}
+
+a:hover {
+	text-decoration: underline
+}
+
+ul,
+li {
+	list-style-type: none
+}
+
+.hid {
+	display: block;
+	height: 0;
+	overflow: hidden
+}
+
+.tn {
+	text-indent: -9999em;
+	overflow: hidden;
+	display: block
+}
+
+.fl,
+.f-left {
+	float: left
+}
+
+.fr,
+.f-right {
+	float: right
+}
+
+.cfix {
+	*zoom: 1
+}
+
+.cfix:after {
+	display: table;
+	content: "";
+	clear: both
+}
+
+img,
+a img {
+	border: none
+}
+
+.pa {
+	position: absolute
+}
+
+.pr {
+	position: relative
+}
+
+.w1000 {
+	width: 1000px;
+	margin: 0 auto
+}
+.con_wrap {
+    height:1260px;
+	background:#fff url("images/con_wrap.jpg") 50% 0px no-repeat;
+}
+.con_bottom {
+    background: url("images/con_bottom.jpg") 50% bottom no-repeat;
+    padding-bottom: 100px;
+}
+.top_wrap {
+	background: url("images/top_wrap1007.jpg") 50% 0 no-repeat;
+}
+
+.con_box {
+	position: relative;
+	height: 873px;
+	background: url("images/con_top.jpg") 0 0 no-repeat;
+	width: 1000px;
+	margin: 0 auto;
+}
+/*top nav*/
+.nav-list {
+	width: 1095px;
+	margin: auto;
+	padding-top: 40px;
+}
+
+.nav-list li {
+	width: 110px;
+	height: 50px;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.nav-list li b {
+	display: inline-block;
+	line-height: 30px;
+	font-size: 16px;
+	width: 80px;
+	font-weight: normal;
+	color: #c90;
+	/*#F3A90A;*/
+}
+
+.nav-list li span {
+	width: 60px;
+	display: inline-block;
+	color: #D8D8D8;
+	font-size: 13px;
+}
+
+.li04 {
+	margin-right: 215px;
+}
+
+.nav-list li a:hover b {
+	color: #c60;
+}
+.nav-logo {
+	left: 434px;
+	top: 10px;
+	z-index: 99;
+	width: 135px;
+	height: 100px;
+	position:absolute;
+}
+
+.nav-logo .logo_a {
+	display: block;
+	width: 100%;
+	height: 100%
+}
+.act_list {
+    margin-top: 261px;
+    background-color: #fff;
+    width: 998px;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: #E1E0DE;
+    margin-left: -1px;
+    min-height: 751px;
+	perspective:2000px;
+}
+.head-route {
+    height: 80px;
+    background-color: #FAF4DF;
+    padding: 0 30px;
+    line-height: 80px;
+    border-bottom: 1px solid #FFF1D1;
+}
+.act_ico {
+    width: 115px;
+    height: 24px;
+    background-position: 0 -522px;
+    margin-top: 28px;
+}
+.c_spr {
+    background-image: url("images/con_spr.png");
+    background-repeat: no-repeat;
+	background-color:#FAF4DF;
+	color:#412F22;
+}
+.act_box {
+    padding: 50px 25px 50px 27px;
+	background:url("images/main.jpg") no-repeat;
+}
+.act_box li {
+    width: 280px;
+    height: 285px;
+    margin: 0 17px;
+    float: left;
+    position: relative;
+}
+.act_box .tit {
+    padding-top: 5px;
+}
+.act_box li {
+    width: 280px;
+    height: 285px;
+    margin: 0 17px;
+    float: left;
+    position: relative;
+}
+.act_box li:hover{
+	z-index:99;
+}
+img, a img {
+    border: none;
+}
+.act_box li a img{
+	transition:transform 1s ease;
+}
+.img1:hover{
+	transform:scale(1.1);
+}
+.img2:hover{
+	transform:scale(1.1);
+}
+.img3:hover{
+	transform:scale(1.1);
+}
+.img4:hover{
+	transform:scale(1.1);
+}
+.img5:hover{
+	transform:scale(1.1);
+}
+.img6:hover{
+	transform:scale(1.1);
+}
+.act_box li p {
+    height: 22px;
+    line-height: 22px;
+}
+.act_box .tit a {
+    color: #aa3000;
+    font-weight: 700;
+}
+.act_box li p {
+    height: 22px;
+    line-height: 22px;
+}
+.act_box .num {
+    color: #0f0f0f;
+    display: none;
+}
+.act_list ul li p a b{
+	color:#aa3000;
+	height: 22px;
+    line-height: 22px;
+}
+
+.act_list ul:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+.top_a_news {
+    width: 90px;
+    height: 29px;
+    left: 580px;
+    top: 250px;
+    z-index: 100;
+}
+/*底部*/
+
+.foot {
+	width: 1423px;
+	position: relative;
+}
+.weibu{
+	position: absolute;
+	bottom: 0;
+	height: 130px;
+	width: 1423px;
+	background-color: #000;
+}
+.listm{
+	width: 1423px;
+	padding: 0 194px;
+	height: 30px;
+	box-sizing: border-box;
+	background-color: #393A3D;
+}
+.listm li{
+	float: left;
+	width: 115px;
+	height: 30px;
+	color: #BB8045;
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+}
+.tlogo{
+	width: 280px;
+	height: 60px;
+	background: url(../images/timi.jpg);
+	float: left;
+}
+.tencent{
+	width: 960px;
+	height: 60px;
+	margin: 20px auto;
+}
+.tcontent{
+}
+.some li a{
+	line-height: 16px;
+	color: #C9A85C;
+	margin-right: 8px;
+}
+.some li{
+	float: left;
+	color: #C9A85C;
+}
+#msg{width:150px;height:150px;
+		position:fixed;
+		left:-150px;
+		bottom:400px;
+		background:url(images/qianghongbao.jpg) no-repeat;
+		background-size:100%;
+		cursor:pointer;
+	}
+	#msg:hover{
+		animation:flash .5s linear infinite alternate;
+	}
+	@keyframes flash{
+		0%{
+			opacity:1;
+		}
+		100%{
+			opacity:0.5;
+		}
+	}
+	#msg .ccc{width:150px;height:150px;
+		display:block;
+		cursor:pointer;
+	}
+	.x{
+		float:right;
+		padding:5px 10px;
+		border:1px solid red;
+		cursor:pointer;
+		position: absolute;
+		right: -30px;
+		top:0px;
+		border-radius:50%;
+	}
