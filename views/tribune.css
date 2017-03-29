@@ -104,9 +104,6 @@ a {
     color: #fff;
 }
 .tcontent{
-    float: left;
-    height: 460px;
-    width: 350px;
     position: relative;
 }
 a.forget{
@@ -556,8 +553,6 @@ ol, ul {
     width: 960px;
     height: 60px;
     margin: 20px auto;
-}
-.tcontent{
 }
 .some li a{
     line-height: 16px;
